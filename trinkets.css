@@ -1,0 +1,152 @@
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppons', sans-serif;
+}
+.homepage {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 10%;
+
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    width: 200px;
+    cursor: pointer;
+
+}
+nav .menu{
+    width: 75px;
+    cursor: pointer;
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #538376;
+    font-weight: 700;
+    position: relative;
+}
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 85px;
+    background: #D1EFBD;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: height 0.5s;
+}
+nav ul li a:hover::before{
+    height: 85px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    position: relative;
+}
+.feature-img{
+    width: 100%;
+    margin-top: 10px;
+}
+.col h1{
+    margin-top: 180px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.col a{
+    text-decoration: none;
+    padding: 18px 50px ;
+    border-radius: 30px;
+    background: #D1EFBD;
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    margin-top: 70px;
+    box-shadow: 5px 8px 10px rgb(0,0,0,0.1);
+
+}
+.col h1{
+    align-items: right;
+    margin-top: 180px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-2{
+    flex-basis: 30%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+.col-2 img{
+    width: 100%;
+    background: #D1EFBD;
+
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+
+}
+.col-4 img{
+    width: 100%;
+}
+.Title{
+    text-align: center;
+    margin:  0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #538376;
+}
+.Title::after{
+    content: '';
+    background: #D1EFBD;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h2{
+    color: black;
+    font-weight: normal;
+}
+.col-4 p{
+  font-size: 14px;
+}
+.col-4:hover{
+    transform: translateX(-5px);
+}
